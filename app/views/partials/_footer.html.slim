@@ -1,0 +1,32 @@
+footer.footer
+  .container.-mobile
+    .row
+      .columns.-md-fill
+        h1.footer-brand
+          = image_tag 'logo.png'
+
+        .footer-menuLft
+          ul
+            li.menu-item
+              = link_to 'Termos de uso', terms_path, class: 'menu-link'
+
+            li.menu-item
+              = link_to 'Site da Gama' , 'http://gama.cademy/', class: 'menu-link'
+
+        nav.footer-menu
+          ul.menu
+            / TODO add real links
+            li.menu-item.-social
+              = mail_to 'contatoa@gama.academy', class: 'menu-social-link' do
+                = icon('envelope')
+            li.menu-item.-social
+              = link_to 'https://www.facebook.com/gamaacademybr/?ref=ts&fref=ts', class: 'menu-social-link' do
+                = icon('facebook')
+            li.menu-item.-social
+              = link_to 'https://www.instagram.com/gamaacademy/', class: 'menu-social-link' do
+                = icon('instagram')
+    .row.u-marginTop20
+      .columns.-md-fill
+        .footer-copy.small.u-textCenter
+          | Gama Game &copy; Copyright 2017 - Todos os direitos reservados.
+          = link_to ' Tecnologia FUNCOMMERCE BUGX', 'http://www.funcommerce.com.br', class: 'text-white'
